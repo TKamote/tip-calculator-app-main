@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="dist/images/logo.svg" alt="logo">
+  </div>
+  <div class="wrapper" id="main-wrapper">
+    <div class="left-input">
+      <p>Bill</p>
+      <input type="text" name="bill" id="cost">
+      <p>Select Tip %</p>
+      <div class="low-tip">
+        <button class="btn-low-tip">5%</button>
+        <button class="btn-low-tip">10%</button>
+        <button class="btn-low-tip">15%</button>
+      </div>
+      <div class="high-tip">
+        <button class="btn-high-tip">25%</button>
+        <button class="btn-high-tip">50%</button>
+        <button class="btn-high-tip">Custom</button>
+      </div>
+      <p>Number of People</p>
+      <input type="number" name="person" id="person"> 
+    </div>
+  <div class="right-output">
+    <div class="tip-amount">
+      <p>Tip Amount</p>
+      <p>/ person</p>
+    </div>
+    <div class="total-tip-amount">
+      <p>Total</p>
+      <p>/ person</p>
+    </div>
+    <button class="btn-reset">
+      Reset
+    </button>
+  </div>   
+  </div> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kamote Nga</a>.
+  </div>
+</body>
+</html>
