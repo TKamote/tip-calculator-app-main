@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="dist/css/main.css">
   <title>Frontend Mentor | Tip calculator app</title>
@@ -15,44 +15,59 @@
   </style>
 </head>
 <body>
+ 
   <div class="logo">
     <img src="dist/images/logo.svg" alt="logo">
   </div>
   <div class="wrapper" id="main-wrapper">
     <div class="left-input">
       <p>Bill</p>
-      <input type="text" name="bill" id="cost">
+      <input type="number" name="bill" id="cost" placeholder="$">
       <p>Select Tip %</p>
       <div class="low-tip">
-        <button class="btn-low-tip">5%</button>
-        <button class="btn-low-tip">10%</button>
-        <button class="btn-low-tip">15%</button>
+        <button class="btn btn-low-tip">5%</button>
+        <button class="btn btn-low-tip">10%</button>
+        <button class="btn btn-low-tip">15%</button>
       </div>
       <div class="high-tip">
-        <button class="btn-high-tip">25%</button>
-        <button class="btn-high-tip">50%</button>
-        <button class="btn-high-tip">Custom</button>
+        <button class="btn btn-high-tip">25%</button>
+        <button class="btn btn-high-tip">50%</button>
+        <button class="btn btn-high-tip btn-custom">Custom</button>
       </div>
-      <p>Number of People</p>
-      <input type="number" name="person" id="person"> 
+      <p class="nopeople">Number of People</p>
+      <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;"type="number" name="person" id="person" placeholder="&#xf007;"> 
     </div>
-  <div class="right-output">
-    <div class="tip-amount">
-      <p>Tip Amount</p>
-      <p>/ person</p>
-    </div>
-    <div class="total-tip-amount">
-      <p>Total</p>
-      <p>/ person</p>
-    </div>
-    <button class="btn-reset">
-      Reset
-    </button>
-  </div>   
+    <div class="right-output">
+      <div class="right-wrapper">
+        <div class="tip-title">
+          <div class="tip-amount">
+            <p>Tip Amount</p>
+            <p class="green">/ person</p>
+          </div>
+          <div class="tip">
+            $0.00
+          </div>
+        </div>
+        <div class="total-tip-amount">
+          <div class="total-tip">
+            <p>Total</p>
+            <p class="green">/ person</p>
+          </div>
+          <div class="tipT">
+            $0.00
+          </div>
+        </div>
+      </div>     
+      <button class="btn-reset">
+        RESET
+      </button>
+     
+    </div>   
   </div> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Kamote Nga</a>.
   </div>
+  <script src="main.js"></script>
 </body>
 </html>

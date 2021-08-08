@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', monospace;
 }
 
 body {
@@ -22,8 +22,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   height: 100vh;
+  margin: 0 auto;
 }
 
 body .logo {
@@ -38,10 +40,10 @@ body .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  min-width: 750px;
-  height: 400px;
+  width: 60%;
+  min-height: 400px;
   background-color: white;
-  margin: 0;
+  margin: 0 auto;
   border-radius: 20px;
   padding: 25px;
 }
@@ -50,7 +52,7 @@ body .wrapper .left-input {
   width: 50%;
   height: auto;
   border-radius: 15px;
-  padding: 25px;
+  padding: 20px 35px 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,6 +72,10 @@ body .wrapper .left-input p {
   margin-bottom: 0;
 }
 
+body .wrapper .left-input .nopeople {
+  margin-top: 20px;
+}
+
 body .wrapper .left-input input {
   margin-top: 0;
   margin-bottom: 10px;
@@ -85,32 +91,135 @@ body .wrapper .left-input .low-tip {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 body .wrapper .left-input .low-tip .btn-low-tip {
-  min-width: 100%;
+  color: #f4fafa;
+  min-width: 31%;
   height: 40px;
+  border: none;
+  border-radius: 6px;
   margin-bottom: 10px;
   background-color: #00494d;
+  cursor: pointer;
 }
 
 body .wrapper .left-input .high-tip {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 body .wrapper .left-input .high-tip .btn-high-tip {
-  min-width: 90%;
+  color: #f4fafa;
+  min-width: 31%;
   height: 40px;
+  border: none;
+  border-radius: 6px;
   margin-bottom: 10px;
   background-color: #00494d;
+  cursor: pointer;
+}
+
+body .wrapper .left-input .high-tip .btn-custom {
+  font-weight: 700;
+  color: #00494d;
+  background-color: #f4fafa;
 }
 
 body .wrapper .right-output {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 15px;
   padding: 25px;
   background-color: #00494d;
+}
+
+body .wrapper .right-output .right-wrapper .tip-title {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper .right-output .right-wrapper .tip-title .tip-amount p.green {
+  color: #7f9c9f;
+}
+
+body .wrapper .right-output .right-wrapper .tip-title .tip {
+  font-size: 40px;
+  color: #26c0ab;
+}
+
+body .wrapper .right-output .right-wrapper .total-tip-amount {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper .right-output .right-wrapper .total-tip-amount .total-tip p.green {
+  color: #7f9c9f;
+}
+
+body .wrapper .right-output .right-wrapper .total-tip-amount .tipT {
+  font-size: 40px;
+  color: #26c0ab;
+}
+
+body .wrapper .right-output .btn-reset {
+  width: 100%;
+  height: 40px;
+  background-color: #5e7a7d;
+  color: #00494d;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-color: #c5e4e7;
+  }
+  body .logo {
+    padding-bottom: 60px;
+  }
+  body .wrapper {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
